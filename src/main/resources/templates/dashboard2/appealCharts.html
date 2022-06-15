@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<div th:fragment="appealCharts" th:remove="tag">
+    <div class="panel-body" style="background: white;">
+        <div class="font-lg text-center margin-bottom-20">প্রাপ্ত আপিলসমূহের বর্তমান অবস্থা</div>
+        <div class="row">
+            <div class="col-sm-6" id="appealTable1">
+                <div class="table-scrollable">
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                        <tr class="text-center">
+                            <th> # </th>
+                            <th> আপিলের অবস্থা </th>
+                            <th> আপিলের সংখ্যা </th>
+                        </tr>
+                        </thead>
+                        <tbody><tr><td colspan="3">No Data</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div id="appealChart1" class="chart" style="height: 250px;"></div>
+            </div>
+        </div>
+        <div class="font-lg text-center">প্রাপ্ত আপিলসমূহের বর্তমান অবস্থা</div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="appealChart2" class="chart" style="height: 300px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
